@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tap Game</title>
+  <link rel="stylesheet" href="tap-game-styles.css" />
+</head>
+<body>
+  <!-- Starry background -->
+  <div class="stars" id="stars-container"></div>
+
+  <div class="game-container">
+    <div class="game-box">
+      <h1>Tap Game</h1>
+      <p class="subtitle">Click as fast as you can!</p>
+      
+      <div class="score-board">
+        <div class="score-item">
+          <span class="label">Score:</span>
+          <span class="value" id="score">0</span>
+        </div>
+        <div class="score-item">
+          <span class="label">Time:</span>
+          <span class="value" id="timer">30</span>
+        </div>
+      </div>
+      
+      <div class="game-area" id="gameArea">
+        <div class="target" id="target">
+          <span class="target-emoji">🎯</span>
+        </div>
+      </div>
+      
+      <div class="game-controls">
+        <button class="game-button" id="startBtn">Start Game</button>
+        <button class="game-button secondary" id="resetBtn">Reset</button>
+      </div>
+      
+      <div class="high-score">
+        <span>High Score: <span id="highScore">0</span></span>
+      </div>
+      
+      <a href="index.html" class="home-button">Go Home</a>
+    </div>
+  </div>
+
+  <script src="tap-game-script.js"></script>
+</body>
+</html>
